@@ -1,9 +1,19 @@
 # experiment.py
 
+import yaml
+
 from simulator import run_episode
 from environment import CropEnvironment
 
-def run_experiment(policy, episodes=10):
+with open("rule_config.yaml", "r") as f:
+    config = yaml.safe_load(f)
+
+    policy = config["policy"]
+    episodes = config["episodes"]
+    seed_range = config["seed_range"]
+
+
+def run_experiment(policy, episode):
     results = []
 
     for i in range(episodes):
