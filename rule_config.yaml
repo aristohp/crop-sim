@@ -1,3 +1,5 @@
-policy: RuleBasedPolicy
+policy:
+  - RandomPolicy
+  - RuleBasedPolicy
+
 episodes: 50
-seed_range: [0, 49]

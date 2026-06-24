@@ -10,7 +10,6 @@ with open("rule_config.yaml", "r") as f:
 
     policy = config["policy"]
     episodes = config["episodes"]
-    seed_range = config["seed_range"]
 
 
 def run_experiment(policy, episodes):
