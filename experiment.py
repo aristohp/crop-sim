@@ -13,7 +13,7 @@ with open("rule_config.yaml", "r") as f:
     seed_range = config["seed_range"]
 
 
-def run_experiment(policy, episode):
+def run_experiment(policy, episodes):
     results = []
 
     for i in range(episodes):
